@@ -1,8 +1,9 @@
-const palavra = "Alemanha"
+const palavra = "Alemana"
 let letraEncontrada = false
 
-for(letra of palavra){
+for(let letra of palavra){
     if(letra === "h"){
+        console.log(`Tem letra ${letra}`)
         letraEncontrada = true
         console.log("Tem letra H")
         break
@@ -10,5 +11,6 @@ for(letra of palavra){
 }
 
 if(!letraEncontrada){
-    console.log("Não tem letra H")
+    letraEncontrada = false
+    console.log("Não encontrada")
 }
